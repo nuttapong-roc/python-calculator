@@ -17,6 +17,10 @@ class TestCalculator(unittest.TestCase):
     def test_multiply(self):
         self.assertEqual(self.calc.multiply(20,3),60)
         self.assertEqual(self.calc.multiply(50,100),5000)
+    
+    def test_divide(self):
+        self.assertEqual(self.calc.divide(3,2),1)
+        self.assertEqual(self.calc.divide(80,8),10)
 
     def test_modulo(self):
         self.assertEqual(self.calc.modulo(10,2),0)
